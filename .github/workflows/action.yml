@@ -33,5 +33,5 @@ jobs:
         run: pip install -r ./req
 
       # 执行脚本
-      - name: 'myTest'
+      - name: 'runBash'
         run: bash ./test.sh
