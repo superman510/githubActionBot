@@ -8,8 +8,8 @@ on:
   push:
 
   # 定时， 这里是每天零点零分执行
-  schedule:
-    - cron: '0 0 * * *'
+#  schedule:
+#    - cron: '0 0 * * *'
 
 # 任务
 jobs:
