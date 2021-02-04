@@ -26,7 +26,7 @@ jobs:
           # run,具体的一个步骤运行的命令或者 action。
         run: |
           echo $var
-          
+
       - name: 'Checkout codes'
         uses: actions/checkout@v1
 
