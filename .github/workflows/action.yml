@@ -23,16 +23,20 @@ jobs:
         #  env,具体的一个step会用到的环境变量
         env:
           var: hello github
+          secretVar: ${{secrets.VARNAME}}
           # run,具体的一个步骤运行的命令或者 action。
         run: |
           echo $var
+          echo $secretVar
 
       - name: 'Checkout codes'
         uses: actions/checkout@v1
 
       # 设置环境
       - name: 'Set up Python'
+        # uses: 指的是这一步骤需要先调用哪个 Action。
         uses: actions/setup-python@v1
+        # with 代表传入参数
         with:
           python-version: 3.7
 
