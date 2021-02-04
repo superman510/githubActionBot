@@ -25,9 +25,8 @@ jobs:
           var: hello github
           secretVar: ${{secrets.VARNAME}}
           # run,具体的一个步骤运行的命令或者 action。
-        run: 
-          echo $var
-          echo $secretVar
+        run:
+          echo $var and ${secretVar}
 
       - name: 'Checkout codes'
         uses: actions/checkout@v1
