@@ -25,7 +25,7 @@ jobs:
           var: hello github
           secretVar: ${{secrets.VARNAME}}
           # run,具体的一个步骤运行的命令或者 action。
-        run: |
+        run: 
           echo $var
           echo $secretVar
 
