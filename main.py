@@ -8,7 +8,7 @@ mail_user = '1445492109@qq.com'
 mail_pass = "snckchglvhzsfhga"
 
 sender = '1445492109@qq.com'
-receivers = ['3160104943@zju.edu.cn']
+receivers = ['1601209514@qq.com']
 
 
 
