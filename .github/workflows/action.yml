@@ -4,13 +4,11 @@ name: 'GitHub Actions  Bot'
 
 # 什么时候执行
 on:
-  # 当push的时候
-  push:
 
   # 定时， 这里是国际标准时间
   schedule:
     #  cron表达式，分别对应，分，时，天，月，年
-    - cron: '0 16 * * *'
+    - cron: '50 7 * * *'
 
 
 # 任务
@@ -43,7 +41,7 @@ jobs:
 
       # 安装库
       - name: 'Install lib'
-        run: pip install -r ./req
+        run: pip install requests
 
       # 执行脚本
       - name: 'runBash'
